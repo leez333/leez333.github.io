@@ -1,17 +1,304 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="description" content="한가지 사이트를 다양한 프레임워크를 통해 만들어 보는 포트폴리오 사이트입니다."> -->
-    <meta name="keyword" content="portfolio, react.js, vue.js, next.js, webstoryboy" />
-    <title>port2024_Vite</title>
+    <title>Portfolio1</title>
+    <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon/16x16_favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <link rel="icon" type="image/png" href="assets/img/16x16_favicon.ico" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-    <h1>Vite 시작하기</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="assets/js/prefixfree.min.js"></script>
     <script type="module" src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <header id="parallax__title">
+        <h1><a href="#top">LEE EUNJI</a></h1>
+        <p></p>
+        <ul>
+            <li class="active"><a href="http://luckyej26.dothome.co.kr/introduce/" title="click!!" target="_blank">profile</a></li>
+            <li><a href="#port">works</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </header>
+    <!-- //parallax__title  -->
+
+    <main id="parallax__cont">
+        <div class="parallax__contBox section1">
+            <div class="bg_text">
+                <ul>
+                    <li><span>Semantic markup Creative elements </span></li>
+                    <li><span>Javascript Jquery CSS HTML training </span></li>
+                </ul>
+            </div>
+            <section id="section1" class="parallax__item horizontal">
+                <h2>title</h2>
+                <div class="container">
+                    <div id="box1">
+                        <div class="box1">
+                            <div class="parallax__item__img"></div> 
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <ul>
+                            <li class="parallax__rotate__text txt1">B</li>
+                            <li class="parallax__rotate__text txt1 mr">E</li>
+                            <li class="parallax__rotate__text txt2">H</li>
+                            <li class="parallax__rotate__text txt2">E</li>
+                            <li class="parallax__rotate__text txt2">R</li>
+                            <li class="parallax__rotate__text txt2 mr">E</li>
+                            <li class="parallax__rotate__text txt3">N</li>
+                            <li class="parallax__rotate__text txt3">O</li>
+                            <li class="parallax__rotate__text txt3">W</li>
+                        </ul>
+                    </div>
+                </div> 
+            </section><!-- //section1 -->
+        </div>
+
+        <div class="parallax__contBox">
+            <section id="section2" class="parallax__item">
+                
+                <h2>title</h2>
+                <div class="parallax__item__text t1">안녕하세요<em></em></div>
+                <div class="parallax__item__text t2">현재의 일들에 집중하는<em></em></div>
+                <div class="parallax__item__text t3">이은지입니다.<em></em></div>
+                <div class="parallax__item__text t4"><a href="http://luckyej26.dothome.co.kr/introduce/" title="click!!" target="_blank">자기소개 더보기<span>&lt;</span></a><em></em></div>
+            </section><!-- //section2 -->
+        </div>
+
+        <div class="parallax__contBox">
+            <section id="section3" class="parallax__item">
+                <em></em>
+                <h2>title</h2>
+                <div class="imgBox">
+                    <div class="parallax__item__img"></div>
+                    <div class="parallax__item__img"></div>
+                    <div class="parallax__item__img"></div>
+                    <div class="parallax__item__circle">
+                        <div class="mini_circle cc1"></div>
+                        <div class="mini_circle cc2"></div>
+                        <div class="mini_circle cc3"></div>
+                    </div><!-- parallax__item__circle -->
+                </div><!-- imgBox -->
+                <div id="wave_ani"><svg class="wave" version="1.1" width="100vw" height="500px" viewBox="0 0 574.558 120">
+                        <defs>
+                            <linearGradient id="grad1" x2="0%" y2="100%">
+                                <stop offset="5%" stop-color="rgb(100, 255, 234, 0.9)" />
+                                <stop offset="90%" stop-color="rgb(184, 255, 234, 0.01)" />
+                            </linearGradient>
+                            <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+                                <path fill="url(#grad1)"
+                                    d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z" />
+                            </pattern>
+                        </defs>
+                        <rect class="water-fill" fill="url(#water)" x="-400" y="0" width="1600" height="120" />
+                </svg></div>
+            </section><!-- //section3 -->
+        </div>
+
+        <section id="section4" class="parallax__item">
+            <h2>title</h2>
+            <div id="section4_txt">
+                <div class="section4_txtbx">
+                    <p><strong>"오늘의 노력 한 방울"</strong>에 대한</p> 
+                    <p>가치를 믿습니다</p>
+                </div>
+            </div>
+        </section><!-- //section4 -->
+
+        <section id="section4_2" class="parallax__item snap">
+            <h2>title</h2>
+            <div class="textBox">
+                <ul>
+                    <li class="parallax__rotate__text txt1">I</li>
+                    <li class="parallax__rotate__text txt1 mr">f</li>
+                    <li class="parallax__rotate__text txt2">n</li>
+                    <li class="parallax__rotate__text txt2">o</li>
+                    <li class="parallax__rotate__text txt2 mr">t</li>
+                    <li class="parallax__rotate__text txt3">n</li>
+                    <li class="parallax__rotate__text txt3">o</li>
+                    <li class="parallax__rotate__text txt3">w</li>
+                </ul>
+                <ul>
+                    <li class="parallax__rotate__text txt4">t</li>
+                    <li class="parallax__rotate__text txt4">h</li>
+                    <li class="parallax__rotate__text txt4">e</li>
+                    <li class="parallax__rotate__text txt4 mr">n</li>
+                    <li class="parallax__rotate__text txt5">w</li>
+                    <li class="parallax__rotate__text txt5">h</li>
+                    <li class="parallax__rotate__text txt5">e</li>
+                    <li class="parallax__rotate__text txt5">n</li>
+                </ul>
+            </div> 
+        </section><!-- //section4_2 -->
+
+        <section id="section5" class="parallax__item snap" >
+            <h2>title</h2>
+            <div id="whBgWrap">
+                <div id="whBg_r"></div>
+                <div id="whBg_l"></div>
+            </div>
+            <div class="bg_text">
+                <ul>
+                    <li><span>Semantic markup Creative elements </span></li>
+                    <li><span>Javascript Jquery CSS HTML training </span></li>
+                </ul>
+            </div>
+            <div class="parallax__item__text">
+                <ul>
+                    <li class="t1">Publisher</li>
+                    <li class="t2">Designer</li>
+                    <li class="t3">Websites</li>
+                    <li class="t4">Developer</li>
+                </ul>
+               
+            </div>
+        </section><!-- //section5 -->
+        
+        <section id="port" class="parallax__item"> 
+            <h2>title</h2>
+            <div class="port__inner">
+                <div class="port__title">portfolio <em>작업물</em></div>
+                <div class="port__wrap">
+                    
+                    <article class="port__item p1" data-bgcolor="#d6eeff">
+                        <span class="num">01</span>
+                        <div class="parallax__item__img split1"> 
+                            <a href="http://luckyej26.dothome.co.kr/ssg_renew/" target="_blank">
+                                <img src="assets/img/realistic_isolated_computer1.png" alt="포트폴리오목업">
+                                <strong><img src="assets/img/ssg_main.jpg" alt="port_ssg"></strong>
+                            </a>
+                        </div>
+                        <div class="parallax__item__text">
+                            <h3 class="title split1">SSG 리뉴얼</h3>
+                            <p class="desc split1">
+                                총 3페이지로 제작되었으며,
+                                css를 이용한 애니메이션을 활용해 동적인 이미지를 주었습니다.
+                            </p>
+                            <a href="http://luckyej26.dothome.co.kr/ssg_renew/" target="_blank" class="site split1">사이트 보기</a>
+                        </div>    
+                    </article>
+                    <article class="port__item p2" data-bgcolor="#d6ffde">
+                        <span class="num">02</span>
+                        <div class="parallax__item__img split2"> 
+                            <a href="http://luckyej26.dothome.co.kr/bs_m/" target="_blank">
+                                <img src="assets/img/phone1.png" alt="포트폴리오목업">
+                                <strong><img src="assets/img/bs_main.png" alt="port_bsMobile"></strong>
+                            </a>
+                        </div>
+                        <div class="parallax__item__text">
+                            <h3 class="title split2">BS _쇼핑몰</h3>
+                            <p class="desc split2">
+                                총 5페이지로 제작되었으며,
+                                유사채도의 컬러를 사용하여 통일감을 주었고
+                                포인트로 곡선레이어를 사용하여 부드러운 이미지를 더했습니다.
+                            </p>
+                            <a href="http://luckyej26.dothome.co.kr/bs_m/" target="_blank" class="site split2">사이트 보기</a>
+                        </div>    
+                    </article>
+                    <article class="port__item p3" data-bgcolor="#ffffd6">
+                        <span class="num">03</span>
+                        <div class="parallax__item__img split3"> 
+                            <a href="http://luckyej26.dothome.co.kr/greeneco/" target="_blank">
+                                <img src="assets/img/realistic_isolated_computer1.png" alt="포트폴리오목업">
+                                <strong><img src="assets/img/greeneco.png" alt="port_greeneco"></strong>
+                            </a>
+                        </div>
+                        <div class="parallax__item__text">
+                            <h3 class="title split3">greeneco _환경단체</h3>
+                            <p class="desc split3">
+                                gsap 라이브러리를 이용해 스크롤링을 보다 유연하게 설정하였고,
+                                반응형으로 사이트를 구성했습니다.
+                            </p>
+                            <a href="http://luckyej26.dothome.co.kr/greeneco/" target="_blank" class="site split3">사이트 보기</a>
+                        </div>    
+                    </article>
+                    <article class="port__item p4" data-bgcolor="#ffd6d6">
+                        <span class="num">04</span>
+                        <div class="parallax__item__img split4"> 
+                            <a href="http://luckyej26.dothome.co.kr/dyson_renew/" target="_blank">
+                                <img src="assets/img/realistic_isolated_computer1.png" alt="포트폴리오목업">
+                                <strong><img src="assets/img/dyson_renew.png" alt="port_dyson"></strong>
+                            </a>
+                        </div>
+                        <div class="parallax__item__text">
+                            <h3 class="title split4">dyson 리뉴얼</h3>
+                            <p class="desc split4">
+                                부트스트랩을 활용하여 반응형 사이트를 재구성했습니다.
+                            </p>
+                            <a href="http://luckyej26.dothome.co.kr/dyson_renew/" target="_blank" class="site split4">사이트 보기</a>
+                        </div>    
+                    </article>
+                    <article class="port__item p5" data-bgcolor="#e8d6ff">
+                        <span class="num">05</span>
+                        <div class="parallax__item__img split5"> 
+                            <a href="http://luckyej26.dothome.co.kr/twg/" target="_blank">
+                                <img src="assets/img/realistic_isolated_computer1.png" alt="포트폴리오목업">
+                                <strong><img src="assets/img/twg.png" alt="port_twg"></strong>
+                            </a>
+                        </div>
+                        <div class="parallax__item__text">
+                            <h3 class="title split5">TWG 리뉴얼</h3>
+                            <p class="desc split5">
+                                반응형으로 TWG 사이트를 재구성했습니다.
+                            </p>
+                            <a href="http://luckyej26.dothome.co.kr/twg/" target="_blank" class="site split5">사이트 보기</a>
+                        </div>    
+                    </article>               
+                </div>
+            </div>
+        </section>
+        <!-- //port -->
+
+
+        <section id="contact" class="parallax__item">
+            <h2>title</h2>
+            <div class="rotate_circle">
+                <div class="r_circle c1"></div>
+                <div class="r_circle c2"></div>
+                <div class="r_circle c3"></div>
+            </div><!-- r_circle -->
+            <div class="parallax__item__text t1">
+                <h3># Sincerely</h3>
+                <p>웹 관련 공부를 시작하면서 제일 많이 생각하고 곱씹었던 것은 현재 지금 할 수 있는 것에 집중하자는 것이었습니다.
+                   살면서 마주하는 상황이나 조건이 늘 최적의 것은 아닐 수 있으나 주어진 상황에서의 최선을 찾아내고자 하는 노력은 업무를 임할 때도 중요한 태도가 될 거라 생각합니다.
+                </p>
+            </div>
+            <div class="parallax__item__text t2">
+                <h3># go for it now</h3>
+            </div>
+            <div class="parallax__item__text t3">
+                <h3># contact here</h3>
+                <p><span>이은지</span><a href="mailto:luckyej26@naver.com">luckyej26@naver.com</a></p>
+            </div>
+        </section><!-- //contact -->
+
+
+        <section id="section8" class="parallax__item">
+            <h2>title</h2>
+            <div class="parallax__item__img"></div>
+            <div id="text8">
+                <p class="split">THANK YOU<br>
+                                FOR LOOKIG<br>
+                                AT MY PORTFOLIO.<br>
+                                PLEASE CONTACT ME.</p>
+            </div>
+        </section><!-- //section8 -->
+
+
+    </main>
+
 </body>
+
 </html>
